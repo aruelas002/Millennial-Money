@@ -1,0 +1,54 @@
+.hero{
+  height: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg {
+  height: 100px;
+}
+
+a{color:black;}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.centered {
+    position: absolute;
+    top: 90%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  .containerHero {
+     height: 1000px;
+  }
+
+.container {
+    display: ;
+}
+
+
+h4:before {
+    font-family: FontAwesome;
+    content: "\f14a";
+    display: inline-block;
+    padding-right: 5px;
+    vertical-align: top;
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 400;
+}
+
