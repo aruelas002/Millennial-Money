@@ -9,6 +9,7 @@
     <title>Contact</title>
 </head>
 <body>
+
         <header class="headContainer">
                 <!-- Head -->
                 <nav class="navbar sticky-top navbar-expand-lg border-bottom border-dark" style="background-color: white;">
@@ -24,26 +25,40 @@
                     </form>
                 </nav>
                 <!-- Hero Image -->
-                    <div class="bg">
-                        <div class="hero">
-                            <img src="media/skyscraper-3184798_1920.jpg" class="img-fluid" alt="Responsive image">
-                            <div class="centered" style="color: white; font-size: 20px;">Millennial Money Matters</div>
-                        </div>
-                    </div>
+                    
             </header>
+
             <main class="mainContainer">
                 <!-- Main -->
-                <div class="container">
-                
+                <div class="container-fluid m-0 p-0">
+                    <!--The div element for the map -->
+                    <div id="map"></div>
                 </div>
             </main>
 
-            
             <footer class="footerContainer">
                     <!-- Footer -->
                         <nav class="navbar fixed-bottom navbar-light bg-black">
                             <a class="navbar-text mx-auto" href="#" style="color: white;">©️ 2019 Millennial Money Matters</a>
                         </nav>
-                </footer>
+            </footer>
+
+            <!-- JavaScript -->
+            <script>
+                    // Initialize and add the map
+                    function initMap() {
+                    // The location of Uluru
+                    var uluru = {lat: 33.684216, lng: -117.825919};
+                    // The map, centered at Uluru
+                    var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 12, center: uluru});
+                    // The marker, positioned at Uluru
+                    var marker = new google.maps.Marker({position: uluru, map: map});
+                    }
+            </script>
+            <script async defer 
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKENaENGIyQIuxAIG-636k5Ilx3H0oL1w&callback=initMap">
+            </script>
+            
 </body>
 </html>
